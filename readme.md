@@ -10,7 +10,14 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
 
 ## 📸 Screenshot
 
-<img width="1637" height="867" alt="image" src="https://github.com/user-attachments/assets/0297cdcc-b13d-4e3e-9748-750a95a0c626" />
+<a href="https://qrcodegenerators2026.netlify.app/" target="_blank">
+  <img
+    width="1637"
+    height="867"
+    alt="QR Code Generator"
+    src="https://github.com/user-attachments/assets/0297cdcc-b13d-4e3e-9748-750a95a0c626"
+  />
+</a>
 
 ---
 
