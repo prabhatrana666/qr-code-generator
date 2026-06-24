@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload,FaQrcode  } from "react-icons/fa";
 import QRCode from "qrcode";
+import { MdClear } from "react-icons/md";
+import { FaShareAlt } from "react-icons/fa";
 import "../App.css";
 
 function QrCodeCard() {
@@ -54,6 +56,41 @@ function QrCodeCard() {
     const clearHistory = () => {
         setHistory([]);
     };
+
+    const shareQRCode = async () => {
+    if (!qrCode) {
+        alert("Generate a QR Code first");
+        return;
+    }
+
+    try {
+        const response = await fetch(qrCode);
+        const blob = await response.blob();
+
+        const file = new File(
+            [blob],
+            "qrcode.png",
+            { type: "image/png" }
+        );
+
+        if (
+            navigator.canShare &&
+            navigator.canShare({ files: [file] })
+        ) {
+            await navigator.share({
+                title: "QR Code",
+                text: "Scan this QR Code",
+                files: [file],
+            });
+        } else {
+            alert(
+                "File sharing is not supported on this browser."
+            );
+        }
+    } catch (error) {
+        console.error(error);
+    }
+};
     return (
         <div className={`container ${darkMode ? "dark" : ""}`}>
             <div className="theme-toggle-wrapper">
@@ -121,6 +158,7 @@ function QrCodeCard() {
 
                     <div className="buttons">
                         <button onClick={generateQRCode}>
+                            <FaQrcode />
                             Generate QR Code
                         </button>
 
@@ -128,10 +166,20 @@ function QrCodeCard() {
                             onClick={downloadQRCode}
                             disabled={!qrCode}
                         >
+                            <FaDownload />
                             Download
                         </button>
 
+                        <button
+                            onClick={shareQRCode}
+                            disabled={!qrCode}
+                        >
+                            <FaShareAlt />
+                            Share
+                        </button>
+
                         <button onClick={clearQRCode}>
+                            <MdClear />
                             Clear
                         </button>
                     </div>
@@ -250,7 +298,7 @@ function QrCodeCard() {
                         <FaLinkedin />
                     </a>
 
-       
+
                 </div>
             </footer>
         </div>
