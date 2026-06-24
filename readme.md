@@ -10,9 +10,6 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
 
 ## 📸 Screenshot
 
-```md
-![QR Code Generator](https://github.com/USERNAME/REPO/assets/IMAGE_ID)
-```
 <img width="1637" height="867" alt="image" src="https://github.com/user-attachments/assets/0297cdcc-b13d-4e3e-9748-750a95a0c626" />
 
 ---
