@@ -10,14 +10,30 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
 
 ## 📸 Screenshot
 
-<a href="https://qrcodegenerators2026.netlify.app/" target="_blank">
-  <img
-    width="1637"
-    height="867"
-    alt="QR Code Generator"
-    src="https://github.com/user-attachments/assets/0297cdcc-b13d-4e3e-9748-750a95a0c626"
-  />
-</a>
+## 📸 Screenshots
+
+<p align="center">
+  <a href="https://qrcodegenerators2026.netlify.app/" target="_blank">
+    <img
+      src="https://i.postimg.cc/2yFmyX7h/image.png"
+      alt="QR Code Generator - Light Mode"
+      width="48%"
+    />
+  </a>
+
+  <a href="https://qrcodegenerators2026.netlify.app/" target="_blank">
+    <img
+      src="https://i.postimg.cc/SNSbVdG2/image.png"
+      alt="QR Code Generator - Dark Mode"
+      width="48%"
+    />
+  </a>
+</p>
+
+<p align="center">
+  <b>Light Mode & Dark Mode Preview</b><br>
+  Click any screenshot to open the live demo.
+</p>
 
 ---
 
