@@ -77,7 +77,9 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
 
 ### Version Control
 
-* Git
+<p align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="40" height="40"/>
+</p>
 * GitHub
 
 ---
