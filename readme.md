@@ -64,8 +64,10 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
 
 ### Libraries
 
-* qrcode
-* react-icons
+<p align="left">
+  <img src="https://cdn.simpleicons.org/react" alt="React Icons" width="40" height="40"/>
+  <img src="https://img.icons8.com/fluency/48/qr-code.png" alt="QRCode" width="40" height="40"/>
+</p>
 
 ### Deployment
 
