@@ -70,8 +70,10 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
 </p>
 
 ### Deployment
+<p align="left">
+  <img src="https://cdn.simpleicons.org/netlify" alt="Netlify" width="40" height="40"/>
+</p>
 
-* Netlify
 
 ### Version Control
 
