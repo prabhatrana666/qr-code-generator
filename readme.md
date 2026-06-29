@@ -61,8 +61,6 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40" height="40"/>
 </p>
 
-- ⚛️ React.js
-
 ### Libraries
 
 * qrcode
