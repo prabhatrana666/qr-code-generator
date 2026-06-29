@@ -62,7 +62,6 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
 </p>
 
 - ⚛️ React.js
-- 🟨 JavaScript (ES6+)
 
 ### Libraries
 
