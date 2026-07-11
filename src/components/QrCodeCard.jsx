@@ -276,31 +276,21 @@ function QrCodeCard() {
 
             </div>
 
-            <footer className="footer">
-                <p>
-                    Made with ❤️ by Prabhat Rana | © {new Date().getFullYear()} All Rights Reserved
-                </p>
+           <footer className="footer">
+    <p>
+        Made with ❤️ by Prabhat Rana | © {new Date().getFullYear()} All Rights Reserved
+    </p>
 
-                <div className="social-links">
-                    <a
-                        href="https://github.com/prabhatrana666"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <FaGithub />
-                    </a>
-
-                    <a
-                        href="www.linkedin.com/in/prabhat-rana"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <FaLinkedin />
-                    </a>
-
-
-                </div>
-            </footer>
+    <div className="social-links">
+        <a
+            href="https://prabhatrana.online"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Visit Portfolio
+        </a>
+    </div>
+</footer>
         </div>
     );
 }
