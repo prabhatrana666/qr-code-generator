@@ -4,7 +4,7 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
 
 ## 🌐 Live Demo
 
-🔗 https://qrcodegenerators2026.netlify.app/
+🔗 https://qr.prabhatrana.online/
 
 ---
 
