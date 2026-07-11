@@ -19,7 +19,7 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
     />
   </a>
 
-  <a href="https://qrcodegenerators2026.netlify.app/" target="_blank">
+  <a href="https://qr.prabhatrana.online/" target="_blank">
     <img
       src="https://i.postimg.cc/SNSbVdG2/image.png"
       alt="QR Code Generator - Dark Mode"
@@ -143,6 +143,7 @@ npm run build
 
 * GitHub: https://github.com/prabhatrana666
 * LinkedIn: https://linkedin.com/in/prabhat-rana
+* Portfolio: https://prabhatrana.online
 
 ---
 
