@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaGithub, FaLinkedin, FaDownload,FaQrcode  } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDownload, FaQrcode } from "react-icons/fa";
 import QRCode from "qrcode";
 import { MdClear } from "react-icons/md";
 import { FaShareAlt } from "react-icons/fa";
@@ -58,39 +58,39 @@ function QrCodeCard() {
     };
 
     const shareQRCode = async () => {
-    if (!qrCode) {
-        alert("Generate a QR Code first");
-        return;
-    }
-
-    try {
-        const response = await fetch(qrCode);
-        const blob = await response.blob();
-
-        const file = new File(
-            [blob],
-            "qrcode.png",
-            { type: "image/png" }
-        );
-
-        if (
-            navigator.canShare &&
-            navigator.canShare({ files: [file] })
-        ) {
-            await navigator.share({
-                title: "QR Code",
-                text: "Scan this QR Code",
-                files: [file],
-            });
-        } else {
-            alert(
-                "File sharing is not supported on this browser."
-            );
+        if (!qrCode) {
+            alert("Generate a QR Code first");
+            return;
         }
-    } catch (error) {
-        console.error(error);
-    }
-};
+
+        try {
+            const response = await fetch(qrCode);
+            const blob = await response.blob();
+
+            const file = new File(
+                [blob],
+                "qrcode.png",
+                { type: "image/png" }
+            );
+
+            if (
+                navigator.canShare &&
+                navigator.canShare({ files: [file] })
+            ) {
+                await navigator.share({
+                    title: "QR Code",
+                    text: "Scan this QR Code",
+                    files: [file],
+                });
+            } else {
+                alert(
+                    "File sharing is not supported on this browser."
+                );
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    };
     return (
         <div className={`container ${darkMode ? "dark" : ""}`}>
             <div className="theme-toggle-wrapper">
@@ -276,21 +276,21 @@ function QrCodeCard() {
 
             </div>
 
-           <footer className="footer">
-    <p>
-        Made with ❤️ by Prabhat Rana | © {new Date().getFullYear()} All Rights Reserved
-    </p>
+            <footer className="footer">
+                <p>
+                    Made with ❤️ by Prabhat Rana | © {new Date().getFullYear()} All Rights Reserved
+                </p>
 
-    <div className="social-links">
-        <a
-            href="https://prabhatrana.online"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Visit Portfolio
-        </a>
-    </div>
-</footer>
+                <div className="social-links">
+                    <a
+                        href="https://prabhatrana.online"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Visit Portfolio
+                    </a>
+                </div>
+            </footer>
         </div>
     );
 }
