@@ -11,7 +11,7 @@ A modern and responsive QR Code Generator built with React. Generate, customize,
 ## 📸 Screenshot
 
 <p align="center">
-  <a href="https://qrcodegenerators2026.netlify.app/" target="_blank">
+  <a href="https://qr.prabhatrana.online/" target="_blank">
     <img
       src="https://i.postimg.cc/2yFmyX7h/image.png"
       alt="QR Code Generator - Light Mode"
